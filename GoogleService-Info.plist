@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>24329758978-bfcvkb0emqkjc1916ne342c0g39fc278.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.24329758978-bfcvkb0emqkjc1916ne342c0g39fc278</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBul_qt6z9C_Ij_vYj-52G6lfanyXE4URc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>24329758978</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.realityworks.BookList</string>
+	<key>PROJECT_ID</key>
+	<string>swiftuibooklist</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swiftuibooklist.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:24329758978:ios:9b6315a6f61072811b7a1b</string>
+	<key>DATABASE_URL</key>
+	<string>https://swiftuibooklist.firebaseio.com</string>
+</dict>
+</plist>
