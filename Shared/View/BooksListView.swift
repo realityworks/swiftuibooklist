@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct BooksListView: View {
-    var books = testData
+    @ObservedObject var viewModel = BooksViewModel()
+    
+    @State private var presentAddNewBookScreen = false
     
     var body: some View {
         NavigationView {
-            List(books) { book in
+            List(viewModel.books) { book in
                 VStack(alignment: .leading) {
                     Text(book.title)
                         .font(.headline)
@@ -23,6 +25,22 @@ struct BooksListView: View {
                 }
             }
             .navigationTitle("Books")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button(action: { presentAddNewBookScreen.toggle() }, label: {
+                        Image(systemName: "plus")
+                    })
+                }
+            }
+            .sheet(isPresented: $presentAddNewBookScreen) {
+                BookEditView()
+            }
+            .onAppear() {
+                viewModel.subscribe()
+            }
+            .onDisappear() {
+                viewModel.unsubscribe()
+            }
         }
     }
 }
